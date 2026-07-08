@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260707-05-f6eb95b"}');</script><script src="/_sdk/f432b76fb310b513.telemetry_sdk.js" integrity="sha512-9FJQ55EKmmqhyyik8BhrMVfm0+iYYfb8uOlRsjtkxJMEI97qOVEI4PnHohDjQAtvAep0IOEpdQ64eki0sz62ug=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timo Bites</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&amp;family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .service-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(78,52,46,0.15); }
+        .gold-btn { background: linear-gradient(135deg, #C9A227, #e6c44a); color: #2B1B17; }
+        .gold-btn:hover { background: linear-gradient(135deg, #e6c44a, #C9A227); }
+        .hero-shape {
+            position: absolute; border-radius: 50%; opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+    </style>
+  <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        choco: { dark: '#2B1B17', DEFAULT: '#4E342E', light: '#6D4C41' },
+                        cream: '#F8F5F0',
+                        gold: '#C9A227'
+                    }
+                }
+            }
+        }
+    </script>
+  <script src="/_sdk/0179d719c431a79e.data_sdk.js" type="text/javascript" integrity="sha512-OsRvJkI5GkC3MJQcgotQYotpzrMSX415GiKKgvYdxQEEkzD/fdchShO2FMSy0PJr/tiINMXOk5Vl2zAgg6bUiA=="></script>
+  <script src="/_sdk/0b3af1c300e720aa.resizing_sdk.js" type="text/javascript" integrity="sha512-nX1P6oXZmEY5wCI2lUVg3BwKu1cr0yi+ZpXgZ0Yn90vkSwvpmyzBMvOyD6VLJUtBwFI2dSrw1b6OvORxSggw3w=="></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full" style="background: rgb(248, 245, 240);"><!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-choco-dark/95 backdrop-blur-sm">
+   <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between"><a href="#hero" data-template-id="nav-logo" class="canva-text font-playfair text-gold font-bold text-xl" style="color: rgb(201, 162, 39); font-weight: 700; font-style: normal; font-size: 16px;">Timo Bites</a> <button id="mobile-menu-btn" class="md:hidden text-cream" aria-label="Toggle menu"> <i data-lucide="menu" class="w-6 h-6"></i> </button>
+    <div id="nav-links" class="hidden md:flex gap-6 text-sm text-white/80"><a href="#about" class="hover:text-gold transition-colors">About</a> <a href="#services" class="hover:text-gold transition-colors">Services</a> <a href="#why" class="hover:text-gold transition-colors">Why Us</a> <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
+    </div>
+   </div>
+   <div id="mobile-nav" class="hidden md:hidden px-4 pb-4 space-y-2 text-white/80 text-sm"><a href="#about" class="block py-1 hover:text-gold">About</a> <a href="#services" class="block py-1 hover:text-gold">Services</a> <a href="#why" class="block py-1 hover:text-gold">Why Us</a> <a href="#contact" class="block py-1 hover:text-gold">Contact</a>
+   </div>
+  </nav><!-- Hero -->
+  <header id="hero" data-template-id="hero-section" class="canva-section relative w-full overflow-hidden flex items-center justify-center" style="min-height: calc(100 * min(var(--vh, 1vh), 1vh)); background: linear-gradient(135deg, rgb(43, 27, 23), rgb(78, 52, 46));">
+   <div class="hero-shape w-72 h-72 bg-gold top-10 left-10" style="position:absolute;"></div>
+   <div class="hero-shape w-96 h-96 bg-gold bottom-10 right-10" style="position:absolute; animation-delay: 2s;"></div>
+   <div class="hero-shape w-48 h-48 bg-white top-1/2 left-1/3" style="position:absolute; animation-delay: 4s;"></div>
+   <div class="relative z-10 text-center px-6 py-32 max-w-3xl mx-auto">
+    <h1 data-template-id="hero-title" class="canva-text font-playfair tracking-wider" style="color: rgb(201, 162, 39); font-weight: 800; font-style: normal; font-size: 56px;">TIMO BITES</h1>
+    <p data-template-id="hero-subtitle" class="canva-text font-playfair mt-4" style="color: rgb(248, 245, 240); font-weight: 600; font-style: normal; font-size: 22px;">Handmade Chocolate Decorations for Every Special Occasion</p>
+    <p data-template-id="hero-desc" class="canva-text mt-6 leading-relaxed opacity-85" style="color: rgb(248, 245, 240); font-weight: 400; font-style: normal; font-size: 15px;">We create elegant chocolate arrangements and luxury chocolate stands for weddings, engagements, birthdays, baby showers, graduations, and all kinds of special celebrations.</p>
+    <div class="flex flex-wrap gap-4 mt-10 justify-center"><a href="#contact" data-template-id="hero-btn-order" class="canva-button gold-btn px-8 py-3 rounded-full font-semibold text-sm uppercase tracking-wide" style="color: rgb(43, 27, 23); font-weight: 600; font-style: normal; font-size: 16px;">Order Now</a> <a href="#contact" data-template-id="hero-btn-contact" class="canva-button border-2 border-gold text-gold px-8 py-3 rounded-full font-semibold text-sm uppercase tracking-wide hover:bg-gold/10 transition-colors" style="color: rgb(201, 162, 39); font-weight: 600; font-style: normal; font-size: 16px;">Contact Us</a>
+    </div>
+   </div>
+  </header><!-- About -->
+  <section id="about" class="w-full bg-cream py-20 px-6">
+   <div class="max-w-3xl mx-auto text-center fade-in">
+    <h2 data-template-id="about-title" class="canva-text font-playfair" style="color: rgb(78, 52, 46); font-weight: 700; font-style: normal; font-size: 32px;">Crafted with Passion</h2>
+    <p data-template-id="about-p1" class="canva-text mt-6 leading-relaxed" style="color: rgb(109, 76, 65); font-weight: 400; font-style: normal; font-size: 16px;">At Timo Bites, we specialize in designing luxurious chocolate decorations that make every celebration unforgettable.</p>
+    <p data-template-id="about-p2" class="canva-text mt-4 leading-relaxed" style="color: rgb(109, 76, 65); font-weight: 400; font-style: normal; font-size: 16px;">Every chocolate arrangement is handcrafted with creativity, attention to detail, and premium quality to bring sweetness and elegance to your special moments.</p>
+   </div>
+  </section><!-- Services -->
+  <section id="services" data-template-id="services-section" class="canva-section w-full py-20 px-6" style="background: rgb(78, 52, 46);">
+   <div class="max-w-6xl mx-auto text-center">
+    <h2 data-template-id="services-title" class="canva-text font-playfair" style="color: rgb(201, 162, 39); font-weight: 700; font-style: normal; font-size: 32px;">Our Services</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-12">
+     <div data-template-id="svc-1" class="canva-card service-card rounded-2xl p-6 text-center" style="background: rgb(248, 245, 240);">
+      <div class="w-14 h-14 mx-auto rounded-full bg-gold/20 flex items-center justify-center mb-4">
+       <i data-lucide="heart" class="w-7 h-7 text-gold"></i>
+      </div>
+      <h3 data-template-id="svc-1-title" class="canva-text font-semibold" style="color: rgb(43, 27, 23); font-weight: 600; font-style: normal; font-size: 19px;">Wedding Chocolate Stands</h3>
+      <p data-template-id="svc-1-desc" class="canva-text mt-2 text-sm leading-relaxed" style="color: rgb(109, 76, 65); font-weight: 400; font-style: normal; font-size: 16px;">Luxury chocolate stands designed for weddings and receptions.</p>
+     </div>
+     <div data-template-id="svc-2" class="canva-card service-card rounded-2xl p-6 text-center" style="background: rgb(248, 245, 240);">
+      <div class="w-14 h-14 mx-auto rounded-full bg-gold/20 flex items-center justify-center mb-4">
+       <i data-lucide="gem" class="w-7 h-7 text-gold"></i>
+      </div>
+      <h3 data-template-id="svc-2-title" class="canva-text font-semibold" style="color: rgb(43, 27, 23); font-weight: 600; font-style: normal; font-size: 19px;">Engagement Decorations</h3>
+      <p data-template-id="svc-2-desc" class="canva-text mt-2 text-sm leading-relaxed" style="color: rgb(109, 76, 65); font-weight: 400; font-style: normal; font-size: 16px;">Elegant chocolate arrangements for engagement parties.</p>
+     </div>
+     <div data-template-id="svc-3" class="canva-card service-card rounded-2xl p-6 text-center" style="background: rgb(248, 245, 240);">
+      <div class="w-14 h-14 mx-auto rounded-full bg-gold/20 flex items-center justify-center mb-4">
+       <i data-lucide="gift" class="w-7 h-7 text-gold"></i>
+      </div>
+      <h3 data-template-id="svc-3-title" class="canva-text font-semibold" style="color: rgb(43, 27, 23); font-weight: 600; font-style: normal; font-size: 19px;">Birthday Chocolate Gifts</h3>
+      <p data-template-id="svc-3-desc" class="canva-text mt-2 text-sm leading-relaxed" style="color: rgb(109, 76, 65); font-weight: 400; font-style: normal; font-size: 16px;">Customized chocolate boxes and creative decorations.</p>
+     </div>
+     <div data-template-id="svc-4" class="canva-card service-card rounded-2xl p-6 text-center" style="background: rgb(248, 245, 240);">
+      <div class="w-14 h-14 mx-auto rounded-full bg-gold/20 flex items-center justify-center mb-4">
+       <i data-lucide="baby" class="w-7 h-7 text-gold"></i>
+      </div>
+      <h3 data-template-id="svc-4-title" class="canva-text font-semibold" style="color: rgb(43, 27, 23); font-weight: 600; font-style: normal; font-size: 19px;">Baby Shower Decorations</h3>
+      <p data-template-id="svc-4-desc" class="canva-text mt-2 text-sm leading-relaxed" style="color: rgb(109, 76, 65); font-weight: 400; font-style: normal; font-size: 16px;">Unique chocolate gifts for newborn celebrations.</p>
+     </div>
+     <div data-template-id="svc-5" class="canva-card service-card rounded-2xl p-6 text-center" style="background: rgb(248, 245, 240);">
+      <div class="w-14 h-14 mx-auto rounded-full bg-gold/20 flex items-center justify-center mb-4">
+       <i data-lucide="award" class="w-7 h-7 text-gold"></i>
+      </div>
+      <h3 data-template-id="svc-5-title" class="canva-text font-semibold" style="color: rgb(43, 27, 23); font-weight: 600; font-style: normal; font-size: 19px;">Graduation Chocolate Arrangements</h3>
+      <p data-template-id="svc-5-desc" class="canva-text mt-2 text-sm leading-relaxed" style="color: rgb(109, 76, 65); font-weight: 400; font-style: normal; font-size: 16px;">Luxury chocolate gifts for graduation ceremonies.</p>
+     </div>
+     <div data-template-id="svc-6" class="canva-card service-card rounded-2xl p-6 text-center" style="background: rgb(248, 245, 240);">
+      <div class="w-14 h-14 mx-auto rounded-full bg-gold/20 flex items-center justify-center mb-4">
+       <i data-lucide="briefcase" class="w-7 h-7 text-gold"></i>
+      </div>
+      <h3 data-template-id="svc-6-title" class="canva-text font-semibold" style="color: rgb(43, 27, 23); font-weight: 600; font-style: normal; font-size: 19px;">Corporate Events</h3>
+      <p data-template-id="svc-6-desc" class="canva-text mt-2 text-sm leading-relaxed" style="color: rgb(109, 76, 65); font-weight: 400; font-style: normal; font-size: 16px;">Professional chocolate decorations for companies and events.</p>
+     </div>
+     <div data-template-id="svc-7" class="canva-card service-card rounded-2xl p-6 text-center" style="background: rgb(248, 245, 240);">
+      <div class="w-14 h-14 mx-auto rounded-full bg-gold/20 flex items-center justify-center mb-4">
+       <i data-lucide="palette" class="w-7 h-7 text-gold"></i>
+      </div>
+      <h3 data-template-id="svc-7-title" class="canva-text font-semibold" style="color: rgb(43, 27, 23); font-weight: 600; font-style: normal; font-size: 19px;">Custom Orders</h3>
+      <p data-template-id="svc-7-desc" class="canva-text mt-2 text-sm leading-relaxed" style="color: rgb(109, 76, 65); font-weight: 400; font-style: normal; font-size: 16px;">Personalized chocolate designs created exactly as requested.</p>
+     </div>
+    </div>
+   </div>
+  </section><!-- Why Choose Us -->
+  <section id="why" data-template-id="why-section" class="canva-section w-full py-20 px-6" style="background: rgb(43, 27, 23);">
+   <div class="max-w-4xl mx-auto text-center">
+    <h2 data-template-id="why-title" class="canva-text font-playfair" style="color: rgb(201, 162, 39); font-weight: 700; font-style: normal; font-size: 32px;">Why Choose Timo Bites?</h2>
+    <div class="grid sm:grid-cols-2 gap-4 mt-10 text-left">
+     <div class="flex items-center gap-3">
+      <i data-lucide="check-circle" class="w-5 h-5 text-gold flex-shrink-0"></i><span data-template-id="why-1" class="canva-text" style="color: rgb(248, 245, 240); font-weight: 400; font-style: normal; font-size: 16px;">Premium Quality Chocolate</span>
+     </div>
+     <div class="flex items-center gap-3">
+      <i data-lucide="check-circle" class="w-5 h-5 text-gold flex-shrink-0"></i><span data-template-id="why-2" class="canva-text" style="color: rgb(248, 245, 240); font-weight: 400; font-style: normal; font-size: 16px;">Handmade with Love</span>
+     </div>
+     <div class="flex items-center gap-3">
+      <i data-lucide="check-circle" class="w-5 h-5 text-gold flex-shrink-0"></i><span data-template-id="why-3" class="canva-text" style="color: rgb(248, 245, 240); font-weight: 400; font-style: normal; font-size: 16px;">Elegant Luxury Designs</span>
+     </div>
+     <div class="flex items-center gap-3">
+      <i data-lucide="check-circle" class="w-5 h-5 text-gold flex-shrink-0"></i><span data-template-id="why-4" class="canva-text" style="color: rgb(248, 245, 240); font-weight: 400; font-style: normal; font-size: 16px;">Custom Orders</span>
+     </div>
+     <div class="flex items-center gap-3">
+      <i data-lucide="check-circle" class="w-5 h-5 text-gold flex-shrink-0"></i><span data-template-id="why-5" class="canva-text" style="color: rgb(248, 245, 240); font-weight: 400; font-style: normal; font-size: 16px;">Affordable Prices</span>
+     </div>
+     <div class="flex items-center gap-3">
+      <i data-lucide="check-circle" class="w-5 h-5 text-gold flex-shrink-0"></i><span data-template-id="why-6" class="canva-text" style="color: rgb(248, 245, 240); font-weight: 400; font-style: normal; font-size: 16px;">Beautiful Packaging</span>
+     </div>
+     <div class="flex items-center gap-3">
+      <i data-lucide="check-circle" class="w-5 h-5 text-gold flex-shrink-0"></i><span data-template-id="why-7" class="canva-text" style="color: rgb(248, 245, 240); font-weight: 400; font-style: normal; font-size: 16px;">Fast Customer Support</span>
+     </div>
+     <div class="flex items-center gap-3">
+      <i data-lucide="check-circle" class="w-5 h-5 text-gold flex-shrink-0"></i><span data-template-id="why-8" class="canva-text" style="color: rgb(248, 245, 240); font-weight: 400; font-style: normal; font-size: 16px;">Perfect for Every Occasion</span>
+     </div>
+    </div>
+   </div>
+  </section><!-- Contact -->
+  <section id="contact" class="w-full bg-cream py-20 px-6">
+   <div class="max-w-3xl mx-auto text-center fade-in">
+    <h2 data-template-id="contact-title" class="canva-text font-playfair" style="color: rgb(78, 52, 46); font-weight: 700; font-style: normal; font-size: 32px;">We'd Love to Hear From You</h2>
+    <p data-template-id="contact-subtitle" class="canva-text mt-3" style="color: rgb(109, 76, 65); font-weight: 400; font-style: normal; font-size: 16px;">Feel free to contact us anytime for orders or inquiries.</p>
+    <div class="mt-6 space-y-2">
+     <p data-template-id="contact-whatsapp" class="canva-text font-medium" style="color: rgb(78, 52, 46); font-weight: 400; font-style: normal; font-size: 16px;">WhatsApp: +961 79 390 456</p>
+     <p data-template-id="contact-instagram" class="canva-text font-medium" style="color: rgb(78, 52, 46); font-weight: 400; font-style: normal; font-size: 16px;">Instagram: @timo.bitess</p>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mt-10"><a href="https://wa.me/96179390456" target="_blank" rel="noopener noreferrer" data-template-id="btn-whatsapp" class="canva-button inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold transition-colors" style="background: rgb(37, 211, 102); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Chat on WhatsApp</a> <a href="https://instagram.com/timo.bitess" target="_blank" rel="noopener noreferrer" data-template-id="btn-instagram" class="canva-button inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-semibold transition-colors" style="background: linear-gradient(135deg, rgb(131, 58, 180), rgb(225, 48, 108)); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Follow us on Instagram</a>
+    </div>
+   </div>
+  </section><!-- Footer -->
+  <footer data-template-id="footer-section" class="canva-footer w-full py-12 px-6 text-center" style="background: rgb(26, 15, 10);">
+   <h3 data-template-id="footer-brand" class="canva-text font-playfair" style="color: rgb(201, 162, 39); font-weight: 700; font-style: normal; font-size: 28px;">TIMO BITES</h3>
+   <p data-template-id="footer-tagline" class="canva-text mt-2 opacity-70" style="color: rgb(248, 245, 240); font-weight: 400; font-style: normal; font-size: 16px;">Luxury Chocolate Decorations — Making every celebration sweeter with handcrafted chocolate creations.</p>
+   <p data-template-id="footer-info" class="canva-text mt-4 opacity-60 text-sm" style="color: rgb(248, 245, 240); font-weight: 400; font-style: normal; font-size: 16px;">Instagram: @timo.bitess  •  WhatsApp: +961 79 390 456</p>
+   <p data-template-id="footer-copyright" class="canva-text mt-6 text-sm opacity-50" style="color: rgb(248, 245, 240); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 Timo Bites. All Rights Reserved.</p>
+  </footer>
+  <script src="/_sdk/e063511df281944a.editing_sdk.js" integrity="sha512-Xa8p4aPfoMxVnzxQE2WAG0FfoaPLxdjOJMfUZGm1yZosJTYmnNDvgLkJ2EoN0i3zxjeQVAzUMSXNvTKQVqbXyQ=="></script>
+  <script>
+        lucide.createIcons();
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-nav').classList.toggle('hidden');
+        });
+        document.querySelectorAll('#mobile-nav a').forEach(a => {
+            a.addEventListener('click', () => document.getElementById('mobile-nav').classList.add('hidden'));
+        });
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => entry.target.classList.add('visible'), i * 100);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a17a0280f1f9e30f',t:'MTc4MzQ2MDQ0OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body></html>
